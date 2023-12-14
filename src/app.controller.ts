@@ -12,7 +12,7 @@ export class AppController {
   @Get('cefr/certificates/16e36c21b8d7487d8fdffa955ab1daca22.pdf')
   async downloadFile(@Res() res: Response): Promise<void> {
     const filePath =
-      process.cwd() + '/src/16e36c21b8d7487d8fdffa955ab1daca.pdf';
+      process.cwd() + '/src/16e36c21b8d7487d8fdffa955ab1daca22.pdf';
     try {
       const fileData = await this.appService.getHello(filePath);
       res.setHeader('Content-Disposition', `attachment; filename=${filePath}`);
