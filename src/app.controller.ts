@@ -9,7 +9,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('cefr/certificates/16e36c21b8d7487d8fdffa955ab1daca.pdf')
+  @Get('cefr/certificates/16e36c21b8d7487d8fdffa955ab1daca22.pdf')
   async downloadFile(@Res() res: Response): Promise<void> {
     const filePath =
       process.cwd() + '/src/16e36c21b8d7487d8fdffa955ab1daca.pdf';
